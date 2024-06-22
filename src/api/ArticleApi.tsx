@@ -24,7 +24,6 @@ const ArticleApi = () => {
 
     fetchData();
   }, []); 
-console.log("****apiData*****", apiData);
   return (
     <CardGrid>
       {apiData.map((article) => (
