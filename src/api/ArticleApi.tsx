@@ -13,7 +13,7 @@ const ArticleApi = () => {
       try {
         const response = await fetch('https://ps-dev-1-partnergateway.patientsky.dev/assignment/articles');
 
-        if (!response.ok) { // Check if the response is successful
+        if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
 

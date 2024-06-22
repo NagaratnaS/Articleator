@@ -10,6 +10,7 @@ import DisplayArticleSummary from './routes/DisplayArticleSummary';
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <React.StrictMode>
+    <h3 style= {{marginLeft: '45%',marginTop: '0', marginBottom: '3%'}}>Articleator</h3>
     <BrowserRouter>
       <Routes>
         <Route path="/article" element={<ArticleApi />} />
