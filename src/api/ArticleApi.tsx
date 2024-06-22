@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import CardGrid from '../views/CardGrid';
 import Card from '../views/Card';
 import '../views/style.css';
+import { useNavigate } from 'react-router-dom';
 
 const ArticleApi = () => {
   const [apiData, setApiData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,10 +26,13 @@ const ArticleApi = () => {
 
     fetchData();
   }, []); 
+  const cardClickHandler = (id) => {
+    navigate("/article/"+id);
+  }
   return (
     <CardGrid>
       {apiData.map((article) => (
-        <Card> {article["title"]} </Card>
+        <Card onClick = {()=> {cardClickHandler(article["id"])}}> {article["title"]} </Card>
       ))}
     </CardGrid>
   );
