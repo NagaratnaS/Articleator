@@ -32,7 +32,7 @@ const ArticleApi = () => {
   return (
     <CardGrid>
       {apiData.map((article) => (
-        <Card onClick = {()=> {cardClickHandler(article["id"])}}> <h3>{article["title"]}</h3> </Card>
+        <Card onClick = {()=> {cardClickHandler(article["id"])}}> {article["title"]} </Card>
       ))}
     </CardGrid>
   );
