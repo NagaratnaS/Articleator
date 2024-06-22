@@ -1,5 +1,5 @@
 body {
-    background: #F4F9FC;
+    background: #E6E6FA;
     font-family: 
       -apple-system,
       BlinkMacSystemFont,
@@ -13,21 +13,25 @@ body {
       "Segoe UI Symbol";
     padding: 1.5rem 2rem;
     text-rendering: optimizeLegibility;
+    margin-top: 3%;
+    margin-left: 0.5%;
   }
   
   .card {
     align-items: center;
-    background: white;
+    background: #FF8C00;
     border-radius: 10px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 50px #8A2BE2(0, 0, 0, 0.05);
     display: flex;
     justify-content: center;
-    min-height: 200px;
-    width: 300px;
+    min-height: 350px;
+    width: 100%;
+    font-size: 90%;
+    border-color: #8A2BE2;
   }
   
   .cardGrid {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 5rem;
     grid-template-columns: repeat(auto-fit, 300px);
   }

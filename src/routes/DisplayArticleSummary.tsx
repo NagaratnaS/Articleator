@@ -25,7 +25,7 @@ export default function DisplayArticleSummary() {
       console.log(id);
     return(
         <div>
-            {apiData["summary"]}
+            <h3>{apiData["summary"]}</h3>
         </div>
     );
 }

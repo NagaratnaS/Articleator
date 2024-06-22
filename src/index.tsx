@@ -7,16 +7,6 @@ import { Router, Route, BrowserRouter, Routes, useParams } from 'react-router-do
 import ArticleApi from './api/ArticleApi';
 import DisplayArticleSummary from './routes/DisplayArticleSummary';
 
-// const root = ReactDOM.createRoot(
-//   document.getElementById('root') as HTMLElement
-// );
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
-// reportWebVitals();
-
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
   <React.StrictMode>
