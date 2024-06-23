@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Router, Route, BrowserRouter, Routes, useParams, Navigate } from 'react-router-dom';
-import ArticleApi from './api/ArticleApi';
-import DisplayArticleSummary from './routes/DisplayArticleSummary';
+import { Router, Route, BrowserRouter, Routes, Navigate } from 'react-router-dom';
+
+import Home from './component/article';
+import SingleArticle from './component/article/singleArticle';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 root.render(
@@ -14,8 +13,8 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Navigate to="/article" replace />} />
-        <Route path="/article" element={<ArticleApi />} />
-        <Route path="/article/:id" element = {<DisplayArticleSummary/>}/>
+        <Route path="/article" element={<Home />} />
+        <Route path="/article/:id" element = {<SingleArticle/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
