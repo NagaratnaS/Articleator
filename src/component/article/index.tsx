@@ -39,7 +39,7 @@ export default function Home() {
     isApiDataLoaded ? 
     <CardGrid>
       {apiData.map((article) => (
-          <Card className="cards" onClick={() => { cardClickHandler(article["id"]); } } children={article["title"]} />
+          <Card className="cards" onClick={() => { cardClickHandler(article["id"]) } } children={article["title"]} />
       ))}
     </CardGrid> :
     <div className="error-container">

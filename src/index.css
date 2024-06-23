@@ -18,7 +18,8 @@ body {
     margin-left: 0.5%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading {
+  margin-left: 45%;
+  margin-top: 0; 
+  margin-bottom: 3%;
 }
